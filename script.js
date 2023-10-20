@@ -11,11 +11,16 @@ function generatePassword() {
   console.log("clicked");
   while (userChoice < 8 || userChoice > 128 || isNaN(userChoice) || userChoice === "") {
     userChoice = window.prompt("How many characters would you like your password to contain?")
+
+    if (!userChoice) {
+      window.alert("Please specify how many characters you would like in your password to continue")
+      window.location.return()
+    }
   }
 
   var lowerCasechoice = window.confirm("Would you like lowercase letters in your password?")
   if (lowerCasechoice) {
-    choicesArray = choicesArray.concat(lowercase)
+    choicesArray = choicesArray.concat(lowerCase)
   }
 
   var upperCasechoice = window.confirm("Would you like uppercase letters in your password?")
@@ -28,22 +33,23 @@ function generatePassword() {
     choicesArray = choicesArray.concat(specialChars)
   }
 
-  var numberschoice = window.confirm ("Would you like numbers in your password?")
+  var numberschoice = window.confirm("Would you like numbers in your password?")
   if (numberschoice) {
-    choicesArray = choicesArray.concat (numbers)
+    choicesArray = choicesArray.concat(numbers)
   }
 
-if (!upperCasechoice && !lowerCasechoice && !specialCharschoice && !numberschoice) {
-  window.alert ("Please choose at least one type of character in order to generate a password")
-  window.location.reload()
-}
-var result = ""
-for (let i = 0; i < userChoice; i++) {
-  result+= choicesArray [Math.floor(Math.random()*choicesArray.length)]
-}
-}
+  if (!upperCasechoice && !lowerCasechoice && !specialCharschoice && !numberschoice) {
+    window.alert("Please choose at least one type of character in order to generate a password")
+    window.location.reload()
+  }
 
+  var result = ""
+  for (let i = 0; i < userChoice; i++) {
+    result += choicesArray[Math.floor(Math.random() * choicesArray.length)]
+  }
 
+  return result
+}
 
 // Write password to the #password input
 function writePassword() {
