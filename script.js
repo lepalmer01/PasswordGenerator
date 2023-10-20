@@ -9,7 +9,7 @@ var choicesArray = []
 
 function generatePassword() {
   console.log("clicked");
-  while (userCHoice < 8 || userCHoice > 128 || isNaN(userChoice) || userChoice === "") {
+  while (userChoice < 8 || userChoice > 128 || isNaN(userChoice) || userChoice === "") {
     userChoice = window.prompt("How many characters would you like your password to contain?")
   }
 
@@ -17,20 +17,14 @@ function generatePassword() {
   if (lowerCasechoice) {
     choicesArray = choicesArray.concat (lowercase)
   }
-
-
-
-
-
-
-
-
-
-
-
-
+  
+  var upperCasechoice = window.confirm ("Would you like uppercase letters in your password?")
+  if (upperCasechoice) {
+    choicesArray = choicesArray.concat (upperCase)
+  }
 
 }
+
 
 
 // Write password to the #password input
