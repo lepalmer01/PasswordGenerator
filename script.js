@@ -32,6 +32,12 @@ function generatePassword() {
   if (numberschoice) {
     choicesArray = choicesArray.concat (numbers)
   }
+
+if (!upperCasechoice && !lowerCasechoice && !specialCharschoice && !numberschoice) {
+  window.alert ("Please choose at least one type of character in order to generate a password")
+  window.location.reload()
+}
+
 }
 
 
