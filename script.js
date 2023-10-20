@@ -27,6 +27,11 @@ function generatePassword() {
   if (specialCharschoice) {
     choicesArray = choicesArray.concat(specialChars)
   }
+
+  var numberschoice = window.confirm ("Would you like numbers in your password?")
+  if (numberschoice) {
+    choicesArray = choicesArray.concat (numbers)
+  }
 }
 
 
