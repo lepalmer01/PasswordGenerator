@@ -13,7 +13,7 @@ function generatePassword() {
     userChoice = window.prompt("How many characters would you like your password to contain?")
 
     if (userChoice === "") {
-      window.alert("Please specify how many characters you would like in your password to continue");
+      window.alert("Please specify how many characters you would like in your password to continue")
     }
     if (!userChoice) {
       return;
