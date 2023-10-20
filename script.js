@@ -37,7 +37,10 @@ if (!upperCasechoice && !lowerCasechoice && !specialCharschoice && !numberschoic
   window.alert ("Please choose at least one type of character in order to generate a password")
   window.location.reload()
 }
-
+var result = ""
+for (let i = 0; i < userChoice; i++) {
+  result+= choicesArray [Math.floor(Math.random()*choicesArray.length)]
+}
 }
 
 
