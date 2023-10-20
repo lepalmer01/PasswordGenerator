@@ -9,12 +9,11 @@ var choicesArray = []
 
 function generatePassword() {
   console.log ("clicked");
+  while(userCHoice < 8 || userCHoice > 128 || isNaN(userChoice) || userChoice === "") {
 
 
-
-
-}
-
+  }
+  }
   
 // Write password to the #password input
 function writePassword() {
