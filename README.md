@@ -1,4 +1,4 @@
-# Password Generator Project
+# Password Generator
 
 This project involved modifying the provided starter code to create a web application that allows the user to generate random passwords based on specific criteria they choose. The application uses HTML, CSS and is powered by JavaScript.
 
@@ -26,9 +26,9 @@ To begin, I created the generate password function that allows the user to gener
 
 I then created variables to store the selected criteria (see image below).
 
-<img src = "Assets/Images/Criteria Variables.png">
+<img src = "Assets/Images/Defined Criteria Variables.png">
 
-Next, I created a window dialog box prompting the user to input their desired chracter count. I set a loop to ensure that the user provided a valid input for the number of character they want in their password. I also added an alert should the user not enter any input, choose to cancel the operation, or make choices outside the set criteria. (see image below).
+Next, I created a window dialog box prompting the user to input their desired chracter count. I set a loop to ensure that the user provided a valid input for the number of character they want in their password. I also added an alert should the user not enter any input, choose to cancel the operation, or make choices outside the set criteria (see image below).
 
 <img src = "Assets/Images/Alerts .png">
 
@@ -48,7 +48,7 @@ Finally, the password was created by selecting random characters from the array 
 
 The application is deployed and can be accessed online. Check it out here: 
 
-MISSING!!!!!!!!!!!!!!!
+https://lepalmer01.github.io/PasswordGenerator/
 
 ## Credits
 Thank you for the tips and suggestionsm from Bootcamp instructors, learning assistants, classmates, and resources. Thank you to my tutor Sara for assisting me in refining my modified starter code further. I have used http: //www.w3schools.com/ and http://www.stackoverflow.com, and https://chat.openai.com to research information. Lastly,thanks to OpenAI's Chatgpt-4 for assistance in creating this README.md template. 

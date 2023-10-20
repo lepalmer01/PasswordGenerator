@@ -13,7 +13,7 @@ function generatePassword() {
     userChoice = window.prompt("How many characters would you like your password to contain?")
 
     if (userChoice === "") {
-      window.alert("Please specify how many characters you would like in your password to continue")
+      window.alert("Please specify how many characters you would like in your password to continue");
     }
     if (!userChoice) {
       return;
@@ -22,10 +22,10 @@ function generatePassword() {
       window.alert("Character count must be less than 128");
     }
     if (userChoice < 8) {
-      window.alert("Character count must be greater then 8")
+      window.alert("Character count must be greater then 8");
     }
     else if (isNaN(userChoice)) {
-      window.alert("Character count must be a number")
+      window.alert("Character count must be a number");
     }
   }
 
