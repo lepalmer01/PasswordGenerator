@@ -13,16 +13,20 @@ function generatePassword() {
     userChoice = window.prompt("How many characters would you like your password to contain?")
   }
 
-  var lowerCasechoice = window.confirm ("Would you like lowercase letters in your password?")
+  var lowerCasechoice = window.confirm("Would you like lowercase letters in your password?")
   if (lowerCasechoice) {
-    choicesArray = choicesArray.concat (lowercase)
-  }
-  
-  var upperCasechoice = window.confirm ("Would you like uppercase letters in your password?")
-  if (upperCasechoice) {
-    choicesArray = choicesArray.concat (upperCase)
+    choicesArray = choicesArray.concat(lowercase)
   }
 
+  var upperCasechoice = window.confirm("Would you like uppercase letters in your password?")
+  if (upperCasechoice) {
+    choicesArray = choicesArray.concat(upperCase)
+  }
+
+  var specialCharschoice = window.confirm("Would you like special characters in your password?")
+  if (specialCharschoice) {
+    choicesArray = choicesArray.concat(specialChars)
+  }
 }
 
 
